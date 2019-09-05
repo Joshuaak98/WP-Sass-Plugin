@@ -1,0 +1,195 @@
+  /**
+
+Lichtblick Style-CSS 
+last update - 2019.07.02
+
+*/
+
+  /* ==========================================================================
+   #Table of Content
+   ========================================================================== */
+
+
+ /**
+ * This is main css file for theme. It is broken into following sections:
+  *1.Listen Bugfix
+  *2.Typography
+  *3.Header
+  *4.Mobile Menu
+  
+ */
+
+
+ /* ==========================================================================
+   #Listen Bugfix | Bitte nicht löschen, beseitigt Fehler in der Navigation
+   ========================================================================== */
+
+ html,
+ body {
+  overflow-x: hidden;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+ }
+
+.mainul li::before {
+ display:none!important;
+}
+
+ .entry-content ul {
+  margin-top: 1em;
+ }
+
+ .comment-content ul > li,
+ .entry-content ul > li {
+  padding-left: 2.5em;
+  text-align: left;
+ }
+
+ .comment-content ul > li:before,
+ .entry-content ul > li:before {
+  font-size: inherit;
+ }
+
+ .wpml-ls-legacy-list-horizontal a {
+  text-decoration: none;
+ }
+
+.comments-area .comment-list .reply a:hover, .comments-area .comment-list .reply a:focus, .comment-content p a, .comment-content ol a, .comment-content ul a, .comment-content table a, .comment-content datalist a, .comment-content blockquote a, .comment-content dl a, .comment-content address a, .entry-content p a, .entry-content ol a, .entry-content ul a, .entry-content table a, .entry-content datalist a, .entry-content blockquote a, .entry-content dl a, .entry-content address a {
+ border-bottom: none;
+}
+
+
+@media (min-width: 1320px) {
+.vcv-layout-wrapper {
+    -ms-grid-columns: 1fr 1280px 1fr;
+    grid-template-columns: 1fr 1280px 1fr;
+}
+}
+
+
+@media (min-width: 1320px) {
+.vcv-editor-theme-hf .vce-row:not([data-vce-full-width="true"]), .vcv-editor-theme-hf .vce-section:not([data-vce-full-width-section="true"]), .vcv-header .vce-row:not([data-vce-full-width="true"]), .vcv-footer .vce-row:not([data-vce-full-width="true"]), .vcv-header .vce-section:not([data-vce-full-width-section="true"]), .vcv-footer .vce-section:not([data-vce-full-width-section="true"]) {
+    max-width: 1280px;
+}
+}
+
+@media (min-width: 1480px) {
+.vcv-layout-wrapper {
+    -ms-grid-columns: 1fr 1440px 1fr;
+    grid-template-columns: 1fr 1440px 1fr;
+}
+}
+
+
+@media (min-width: 1480px) {
+.vcv-editor-theme-hf .vce-row:not([data-vce-full-width="true"]), .vcv-editor-theme-hf .vce-section:not([data-vce-full-width-section="true"]), .vcv-header .vce-row:not([data-vce-full-width="true"]), .vcv-footer .vce-row:not([data-vce-full-width="true"]), .vcv-header .vce-section:not([data-vce-full-width-section="true"]), .vcv-footer .vce-section:not([data-vce-full-width-section="true"]) {
+    max-width: 1440px;
+}
+}
+
+
+
+
+@media screen and (max-width: 575px){
+
+.vcv-layout-wrapper {
+ padding: 0 1em;
+}
+}
+
+
+
+
+ /* ==========================================================================
+   #Typography
+   ========================================================================== */
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h5,
+ h6,
+ #headermenu {
+font-family: GalanoGrotesque-Bold;
+	font-weight: normal;
+	font-style: normal;
+ }
+
+ h6 {
+  text-transform:uppercase;
+}
+
+body,
+ p,
+ blockquote,
+ li,
+ a {
+ font-family: GalanoGrotesque-Regular;
+	font-weight: normal;
+	font-style: normal;
+ }
+
+b, 
+strong {
+  font-family: GalanoGrotesque-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+
+ #bright a {}
+
+ #bright a:hover {}
+
+ #bright body,
+ #bright p,
+ #bright h1,
+ #bright h2,
+ #bright h3,
+ #bright h4,
+ #bright h5 {
+  color: #FFFFFF;
+ }
+
+
+ #semidark body,
+ #semidark p,
+ #semidark h1,
+ #semidark h2,
+ #semidark h3,
+ #semidark h4,
+ #semidark h5 {}
+
+ #dark body,
+ #dark p,
+ #dark h1,
+ #dark h2,
+ #dark h3,
+ #dark h4,
+ #dark h5 {}
+
+  /* ==========================================================================
+   #Revolutiom Slider
+   ========================================================================== */
+
+
+  h1.rs-layer {
+   font-family: 'GalanoGrotesque-Bold' !important;
+   font-weight: normal;
+   font-style: normal;
+  }
+
+  h2.rs-layer {
+   font-family: inherit !important;
+   font-weight: normal;
+   font-style: normal;
+  }
+
+
+ /* ==========================================================================
+#Header
+========================================================================== */
+

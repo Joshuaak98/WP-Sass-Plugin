@@ -1,0 +1,65 @@
+$bgcolor: darkred;
+$textcolor: white;
+
+@import 'assets/mixins';
+
+
+* {
+	font-family: $mainFont;
+}
+
+
+.ginput_container, .gfield_label {
+	@include streched_grav_form
+}
+
+.gform_button {
+	@include radius_button_mixin;
+}
+
+
+.gfield {
+	@include grav_form_input_flex;
+}
+
+
+
+input, select {
+	@include grav_form_input;
+
+
+}
+
+select {
+	background-color: transparent;
+}
+
+
+#gform_fields_1 {
+		@include three_col_grid;
+}
+
+
+
+
+#dark {
+	h1, h2, h3, h4, h5 {
+		color: $darkColor;
+		}
+}
+
+#semidark {
+	h1, h2, h3, h4, h5 {
+		color: $mediumColor;
+		}
+}
+
+#bright {
+	h1, h2, h3, h4, h5 {
+		color: $lightColor;
+		}
+}
+
+h1.rs-layer, h2.rs-layer {
+	@include revo_slider_rs_layer
+}
